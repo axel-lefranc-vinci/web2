@@ -1,0 +1,19 @@
+### Create a pizza
+
+POST {{pizzaUrl}}
+Content-Type: application/json
+
+{
+    "title":"Magic Green",
+    "content":"Epinards, Brocolis, Olives vertes, Basilic"
+}
+
+### Read all pizzas with File variable
+@pizzaUrl = http://localhost:3000/pizzas
+GET {{pizzaUrl}}
+
+### Read all pizzas sorted by title (ascending)
+GET {{pizzaUrl}}/?order=+title
+
+### Read all pizzas sorted by title (descending)
+GET {{pizzaUrl}}/?order=-title
