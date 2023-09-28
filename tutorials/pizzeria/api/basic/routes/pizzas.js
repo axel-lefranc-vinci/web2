@@ -79,9 +79,8 @@ router.post('/', (req, res) => {
   };
 
   MENU.push(newPizza);
-
+  
   res.json(newPizza);
 });
-
 
 module.exports = router;

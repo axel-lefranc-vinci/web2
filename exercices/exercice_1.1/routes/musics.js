@@ -39,7 +39,6 @@ const LIST_MUSICS = [
   },
 ];
 
-// Read all the pizzas from the menu
 router.get('/', (req, res, next) => {
   console.log('GET /musics');
   res.json(LIST_MUSICS);
