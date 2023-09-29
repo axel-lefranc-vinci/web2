@@ -1,5 +1,6 @@
-### Create a pizza
+@pizzaUrl = http://localhost:3000/pizzas
 
+### Create a pizza
 POST {{pizzaUrl}}
 Content-Type: application/json
 
@@ -9,7 +10,6 @@ Content-Type: application/json
 }
 
 ### Read all pizzas with File variable
-@pizzaUrl = http://localhost:3000/pizzas
 GET {{pizzaUrl}}
 
 ### Read all pizzas sorted by title (ascending)
@@ -17,3 +17,17 @@ GET {{pizzaUrl}}/?order=+title
 
 ### Read all pizzas sorted by title (descending)
 GET {{pizzaUrl}}/?order=-title
+
+### Delete pizza identified by 2
+DELETE {{pizzaUrl}}/2
+
+### Update the pizza identified by 6
+PATCH {{pizzaUrl}}/6
+Content-Type: application/json
+
+{
+    "title":"Magic Green 2"
+}
+
+
+
