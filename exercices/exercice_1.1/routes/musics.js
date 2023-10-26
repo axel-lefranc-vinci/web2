@@ -12,6 +12,7 @@ const LIST_MUSICS = [
   {
     id: 2,
     title: 'Bitch',
+    
     duration:'4\'49\'\'',
     views:'39 Millions',
     link:'https://www.youtube.com/watch?v=M3iGcTxw5d4'
